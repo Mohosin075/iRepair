@@ -1,13 +1,6 @@
-import { Button } from "@/components/ui/button";
+import MainLayout from "./components/layouts/MainLayout";
 function App() {
-  return (
-    <div>
-      <h2 className="font-bold text-4xl text-center text-green-500">
-        This is iRepair!
-      </h2>
-      <Button>Click me</Button>
-    </div>
-  );
+  return <MainLayout></MainLayout>
 }
 
 export default App;
