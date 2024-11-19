@@ -8,7 +8,7 @@ function BateryReplacement() {
     <motion.div
       style={style}
       ref={componentRef}
-      className="h-56 bg-light-gray col-span-12 rounded-lg"
+      className="h-56 bg-red-500 col-span-12 rounded-lg"
     ></motion.div>
   );
 }

@@ -17,10 +17,10 @@ function ServicesSection() {
           <BateryReplacement></BateryReplacement>
           <ChipsetReplacement></ChipsetReplacement>
           <DataRecovery></DataRecovery>
-          <div className="h-56 bg-light-gray col-span-12 rounded-lg"></div>
-          <div className="h-56 bg-light-gray col-span-12 md:col-span-6 lg:col-span-4 rounded-lg"></div>
-          <div className="h-56 bg-light-gray col-span-12 md:col-span-6 lg:col-span-4 rounded-lg"></div>
-          <div className="h-56 bg-light-gray col-span-12 lg:col-span-4 rounded-lg"></div>
+          <div className="h-56 bg-red-500 col-span-12 rounded-lg"></div>
+          <div className="h-56 bg-red-500 col-span-12 md:col-span-6 lg:col-span-4 rounded-lg"></div>
+          <div className="h-56 bg-red-500 col-span-12 md:col-span-6 lg:col-span-4 rounded-lg"></div>
+          <div className="h-56 bg-red-500 col-span-12 lg:col-span-4 rounded-lg"></div>
         </div>
       </div>
     </Container>

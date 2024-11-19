@@ -7,7 +7,7 @@ function DataRecovery() {
     <motion.div
       style={style}
       ref={componentRef}
-      className="h-56 bg-light-gray col-span-6 lg:col-span-7 rounded-lg"
+      className="h-56 bg-red-500 col-span-6 lg:col-span-7 rounded-lg"
     ></motion.div>
   );
 }
