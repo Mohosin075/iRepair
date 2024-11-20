@@ -3,7 +3,6 @@ import { useQuery } from "@tanstack/react-query";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -11,25 +10,11 @@ import {
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/Container";
+import { Delete, Trash } from "lucide-react";
+import { useGetServices } from "@/api/admin/services/services.hooks";
 
 function ServiceList() {
-  const {
-    isLoading,
-    data: services,
-    isError,
-  } = useQuery({
-    queryKey: ["services"],
-    queryFn: gerServices,
-    select: (data) => {
-      const services = data?.data.data?.map((item) => ({
-        id: item._id,
-        name: item.name,
-        description: item.description,
-        price: item.price,
-      }));
-      return services;
-    },
-  });
+  const { isLoading, data: services } = useGetServices();
 
   if (isLoading) {
     return <p>Loading...</p>;
@@ -53,7 +38,9 @@ function ServiceList() {
               <TableCell>{service.description}</TableCell>
               <TableCell>{service.price}</TableCell>
               <TableCell className="text-right">
-                <Button variant="destructive">del</Button>
+                <Button variant="destructive" className="p-3">
+                  <Trash></Trash>
+                </Button>
               </TableCell>
             </TableRow>
           ))}
